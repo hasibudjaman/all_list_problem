@@ -55,7 +55,10 @@ root.insert(10)
 list=[20,4,30,4,1,5,6]
 for i in list:
     root.insert(i)
+
 print()
 root.search(4)
+
+
 
 
