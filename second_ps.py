@@ -22,6 +22,23 @@ class BST:
 
                  self.rightchil=BST(data)
 
+    def search(self,data):
+        if self.key==data:
+            print("Node is found")
+            return
+        if data < self.key:
+            if self.leftchild:
+                self.leftchild.search(data)
+            else:
+                print("Node is not present in this tree")
+
+        if data> self.key:
+            if self.rightchil:
+                self.rightchil.search(data)
+            else:
+                print("Node is not present in this tree")
+                
+
 
 
 
@@ -38,6 +55,7 @@ root.insert(10)
 list=[20,4,30,4,1,5,6]
 for i in list:
     root.insert(i)
-    print(root.insert())
+print()
+root.search(4)
 
 
